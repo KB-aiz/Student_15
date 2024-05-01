@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import routes from './src/routes/userRoutes.js';
+import routes from './src/routes/userRoutes.js.old';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 
