@@ -1,8 +1,14 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { UserSchema } from '../models/userModels.js';
+import { UserSchema } from './models/userModels.js';
 import { validationResult } from 'express-validator';
+
+if (UserSchema) {
+    console.log('ContactSchema imported successfully:', ContactSchema);
+} else {
+    console.error('Error importing ContactSchema');
+}
 
 const User = mongoose.model('User', UserSchema);
 

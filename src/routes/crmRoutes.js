@@ -1,4 +1,10 @@
-import { addNewContact, getContacts, getContactWithID, updateContact, deleteContact } from '../controllers/crmController.js';
+import { addNewContact, getContacts, getContactWithID, updateContact, deleteContact } from './controllers/crmController.js';
+
+if (addNewContact && getContacts && getContactWithID && updateContact && deleteContact) {
+    console.log('Imports successful');
+} else {
+    console.error('Error importing something from crmController');
+}
 
 const routes = (app) => {
     app.route('/contact')

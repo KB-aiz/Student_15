@@ -1,5 +1,11 @@
 import mongoose from 'mongoose';
-import { ContactSchema } from '../models/crmModel.js';
+import { ContactSchema } from './models/crmModel.js';
+
+if (ContactSchema) {
+    console.log('ContactSchema imported successfully:', ContactSchema);
+} else {
+    console.error('Error importing ContactSchema');
+}
 
 const Contact = mongoose.model('Contact', ContactSchema);
 

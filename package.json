@@ -1,5 +1,5 @@
 {
-  "name": "std35-crm",
+  "name": "std15-crm",
   "version": "1.0.0",
   "description": "A toy API project demonstrating how to dockerized the API development.",
   "main": "index.js",

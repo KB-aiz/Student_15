@@ -1,7 +1,18 @@
-import { addNewContact, getContacts, getContactWithID, updateContact, deleteContact } from '../controllers/crmController.js';
-import { login, register, loginRequired, getUser } from '../controllers/userController.js';
+import { addNewContact, getContacts, getContactWithID, updateContact, deleteContact } from './controllers/crmController.js';
+import { login, register, loginRequired, getUser } from './controllers/userController.js';
 import { check } from 'express-validator';
 
+if (addNewContact && getContacts && getContactWithID && updateContact && deleteContact) {
+    console.log('Imports successful');
+} else {
+    console.error('Error importing something from crmController');
+}
+
+if (login && register && loginRequired && getUser) {
+    console.log('Imports successful');
+} else {
+    console.error('Error importing something from userController');
+    
 const routes = (app) => {
 
     /**
